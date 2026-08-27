@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Departments | Vitalis Medical Center</title>
+  <meta name="description" content="Explore the 24+ specialized medical departments and clinical institutes at Vitalis Medical Center, from cardiology and neurology to robotic surgery.">
+  <meta name="theme-color" content="#0A1E3F">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- STRICT NAVBAR -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="Vitalis Medical Center Home">
+        <div class="brand-icon">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VITALIS</span>
+          <span class="brand-tagline">Medical Center</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="departments.html" class="nav-link active">Departments</a>
+        <a href="doctors.html" class="nav-link">Doctors</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta-wrapper">
+        <a href="appointment.html" class="btn btn-nav-appointment" id="navAppointmentBtn">
+          <i class="bi bi-calendar2-check-fill"></i> FOR APPOINTMENTS
+        </a>
+      </div>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <!-- Close Drawer Button -->
+    <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <div class="mobile-menu-list">
+      <a href="index.html" class="mobile-menu-link">
+        <span>Home</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="about.html" class="mobile-menu-link">
+        <span>About</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="departments.html" class="mobile-menu-link active">
+        <span>Departments</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="doctors.html" class="mobile-menu-link">
+        <span>Doctors</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="contact.html" class="mobile-menu-link">
+        <span>Contact</span> <i class="bi bi-chevron-right"></i>
+      </a>
+    </div>
+    <div class="mobile-drawer-cta mt-auto">
+      <a href="appointment.html" class="btn btn-nav-appointment w-100 text-center" style="display: block; text-align: center;">
+        <i class="bi bi-calendar2-check-fill"></i> FOR APPOINTMENTS
+      </a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         DEPARTMENTS — SECTION 1: DEPARTMENTS HERO
+         ========================================================================== -->
+    <section class="inner-hero" id="departments-hero">
+      <div class="container">
+        <div class="reveal-fade-up text-center" style="max-width: 800px; margin: 0 auto;">
+          <nav class="breadcrumb-nav justify-content-center" aria-label="Breadcrumb" style="justify-content: center;">
+            <a href="index.html">Home</a>
+            <i class="bi bi-chevron-right"></i>
+            <span class="active">Departments</span>
+          </nav>
+          <span class="badge-tag badge-teal">Institutes of Medicine</span>
+          <h1 class="inner-hero-title">Comprehensive Clinical Specialties</h1>
+          <p class="inner-hero-lead" style="margin: 0 auto;">
+            Vitalis houses 24+ specialized departments equipped with pioneering diagnostic modalities, world-class subspecialists, and patient-first care pathways.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DEPARTMENTS — SECTION 2: DEPARTMENT GRID (14 COMPREHENSIVE SPECIALTIES)
+         ========================================================================== -->
+    <section class="section-py" id="dept-grid-section">
+      <div class="container">
+        <!-- Category Filter Tabs -->
+        <div class="filter-button-group reveal-fade-up">
+          <button class="filter-btn active" data-filter="all" data-target-grid="departmentsGrid">All Specialties</button>
+          <button class="filter-btn" data-filter="surgical" data-target-grid="departmentsGrid">Surgical Institutes</button>
+          <button class="filter-btn" data-filter="internal" data-target-grid="departmentsGrid">Internal Medicine</button>
+          <button class="filter-btn" data-filter="diagnostic" data-target-grid="departmentsGrid">Diagnostic &amp; Critical</button>
+        </div>
+
+        <div class="dept-grid" id="departmentsGrid">
+          <!-- 1. Cardiology -->
+          <div class="dept-card filterable-item reveal-fade-up" data-category="internal" id="cardiology">
+            <div class="dept-icon-wrapper"><i class="bi bi-heart-pulse"></i></div>
+            <h3 class="dept-title">Cardiology</h3>
+            <p class="dept-desc">Coronary angioplasty, electrophysiology, echocardiography, and transcatheter valve replacement.</p>
+            <a href="appointment.html?dept=Cardiology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 2. Neurology -->
+          <div class="dept-card filterable-item reveal-fade-up delay-100" data-category="surgical" id="neurology">
+            <div class="dept-icon-wrapper"><i class="bi bi-activity"></i></div>
+            <h3 class="dept-title">Neurology &amp; Spine</h3>
+            <p class="dept-desc">Microscopic brain tumor surgery, Parkinson's deep brain stimulation, and acute stroke thrombolysis.</p>
+            <a href="appointment.html?dept=Neurology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 3. Orthopedics -->
+          <div class="dept-card filterable-item reveal-fade-up delay-200" data-category="surgical" id="orthopedics">
+            <div class="dept-icon-wrapper"><i class="bi bi-bandaid"></i></div>
+            <h3 class="dept-title">Orthopedic Surgery</h3>
+            <p class="dept-desc">Robotic total knee and hip arthroplasty, sports medicine arthroscopy, and complex trauma fixation.</p>
+            <a href="appointment.html?dept=Orthopedics" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 4. Pediatrics -->
+          <div class="dept-card filterable-item reveal-fade-up delay-300" data-category="internal" id="pediatrics">
+            <div class="dept-icon-wrapper"><i class="bi bi-emoji-smile"></i></div>
+            <h3 class="dept-title">Pediatrics &amp; NICU</h3>
+            <p class="dept-desc">Level IV Neonatal Intensive Care, pediatric cardiology, immunization, and childhood developmental medicine.</p>
+            <a href="appointment.html?dept=Pediatrics" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 5. Oncology -->
+          <div class="dept-card filterable-item reveal-fade-up" data-category="internal" id="oncology">
+            <div class="dept-icon-wrapper"><i class="bi bi-virus2"></i></div>
+            <h3 class="dept-title">Comprehensive Oncology</h3>
+            <p class="dept-desc">Targeted immunotherapy, precision molecular sequencing, surgical oncology, and radiation therapy.</p>
+            <a href="appointment.html?dept=Oncology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 6. General Medicine -->
+          <div class="dept-card filterable-item reveal-fade-up delay-100" data-category="internal" id="general-medicine">
+            <div class="dept-icon-wrapper"><i class="bi bi-clipboard2-pulse"></i></div>
+            <h3 class="dept-title">General Medicine</h3>
+            <p class="dept-desc">Preventive executive health checkups, chronic lifestyle disease management, and internal diagnostic evaluations.</p>
+            <a href="appointment.html?dept=General+Medicine" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 7. Dermatology -->
+          <div class="dept-card filterable-item reveal-fade-up delay-200" data-category="internal" id="dermatology">
+            <div class="dept-icon-wrapper"><i class="bi bi-flower1"></i></div>
+            <h3 class="dept-title">Dermatology &amp; Mohs</h3>
+            <p class="dept-desc">Mohs micrographic skin cancer surgery, clinical phototherapy, laser therapies, and complex psoriasis treatments.</p>
+            <a href="appointment.html?dept=Dermatology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 8. Gastroenterology -->
+          <div class="dept-card filterable-item reveal-fade-up delay-300" data-category="internal" id="gastroenterology">
+            <div class="dept-icon-wrapper"><i class="bi bi-capsule"></i></div>
+            <h3 class="dept-title">Gastroenterology</h3>
+            <p class="dept-desc">Advanced therapeutic endoscopy, ERCP, liver transplant evaluations, and inflammatory bowel disease care.</p>
+            <a href="appointment.html?dept=Gastroenterology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 9. Pulmonology -->
+          <div class="dept-card filterable-item reveal-fade-up" data-category="internal" id="pulmonology">
+            <div class="dept-icon-wrapper"><i class="bi bi-wind"></i></div>
+            <h3 class="dept-title">Pulmonology &amp; Sleep</h3>
+            <p class="dept-desc">Bronchoscopy, pulmonary fibrosis management, asthma therapeutics, and dedicated sleep diagnostic laboratories.</p>
+            <a href="appointment.html?dept=Pulmonology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 10. Gynecology & Obstetrics -->
+          <div class="dept-card filterable-item reveal-fade-up delay-100" data-category="surgical" id="gynecology">
+            <div class="dept-icon-wrapper"><i class="bi bi-gender-female"></i></div>
+            <h3 class="dept-title">Gynecology &amp; Obstetrics</h3>
+            <p class="dept-desc">High-risk pregnancy monitoring, minimally invasive laparoscopic hysterectomy, and comprehensive fertility care.</p>
+            <a href="appointment.html?dept=Gynecology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 11. ENT (Otolaryngology) -->
+          <div class="dept-card filterable-item reveal-fade-up delay-200" data-category="surgical" id="ent">
+            <div class="dept-icon-wrapper"><i class="bi bi-soundwave"></i></div>
+            <h3 class="dept-title">ENT &amp; Head / Neck</h3>
+            <p class="dept-desc">Endoscopic sinus surgery, cochlear implants, voice restoration, and head &amp; neck oncology resection.</p>
+            <a href="appointment.html?dept=ENT" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 12. Urology -->
+          <div class="dept-card filterable-item reveal-fade-up delay-300" data-category="surgical" id="urology">
+            <div class="dept-icon-wrapper"><i class="bi bi-droplet-half"></i></div>
+            <h3 class="dept-title">Urology &amp; Kidney</h3>
+            <p class="dept-desc">Laser lithotripsy for kidney stones, robotic prostatectomy, and advanced reconstructive urology.</p>
+            <a href="appointment.html?dept=Urology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 13. Emergency Medicine -->
+          <div class="dept-card filterable-item reveal-fade-up" data-category="diagnostic" id="emergency">
+            <div class="dept-icon-wrapper"><i class="bi bi-truck"></i></div>
+            <h3 class="dept-title">Emergency &amp; Trauma</h3>
+            <p class="dept-desc">24/7 Level 1 Trauma resuscitation, dedicated cardiac arrest suites, and rapid mobile ICU dispatch.</p>
+            <a href="contact.html#emergency" class="dept-link">24/7 Emergency Line <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 14. Radiology & Diagnostics -->
+          <div class="dept-card filterable-item reveal-fade-up delay-100" data-category="diagnostic" id="radiology">
+            <div class="dept-icon-wrapper"><i class="bi bi-broadcast-pin"></i></div>
+            <h3 class="dept-title">Radiology &amp; Imaging</h3>
+            <p class="dept-desc">3T Ultra-High Field MRI, 512-slice Spectral CT, digital mammography, and interventional fluoroscopy.</p>
+            <a href="appointment.html?dept=Radiology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 15. Ophthalmology -->
+          <div class="dept-card filterable-item reveal-fade-up delay-200" data-category="surgical" id="ophthalmology">
+            <div class="dept-icon-wrapper"><i class="bi bi-eye"></i></div>
+            <h3 class="dept-title">Ophthalmology &amp; Vision</h3>
+            <p class="dept-desc">Cataract micro-surgery, LASIK vision correction, glaucoma management, and specialized corneal transplants.</p>
+            <a href="appointment.html?dept=Ophthalmology" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 16. Rehabilitation -->
+          <div class="dept-card filterable-item reveal-fade-up delay-300" data-category="internal" id="rehabilitation">
+            <div class="dept-icon-wrapper"><i class="bi bi-person-arms-up"></i></div>
+            <h3 class="dept-title">Rehab &amp; Physiotherapy</h3>
+            <p class="dept-desc">Neurological post-stroke recovery, customized orthopedic rehabilitation, and cardiac strengthening regimens.</p>
+            <a href="appointment.html?dept=Rehabilitation" class="dept-link">Book Department <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DEPARTMENTS — SECTION 3: SPECIALIZED CARE & ADVANCED TECHNOLOGY
+         ========================================================================== -->
+    <section class="section-py bg-surface" id="specialized-care">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="badge-tag badge-teal">Clinical Innovation</span>
+          <h2 class="section-title">Next-Generation Medical Technology</h2>
+          <p class="section-subtitle">
+            We invest continuously in cutting-edge surgical robotics and intelligent diagnostic instrumentation to maximize precision and accelerate recovery.
+          </p>
+        </div>
+
+        <div class="tech-showcase-grid">
+          <!-- Tech 1 -->
+          <div class="tech-card reveal-fade-up">
+            <div class="tech-img-box">
+              <img src="assets/images/department-robotic.jpg" alt="Robotic Surgery Suite at Vitalis" loading="lazy">
+            </div>
+            <div class="tech-content">
+              <h3 class="tech-title">da Vinci® Robotic Surgical Suites</h3>
+              <p class="tech-desc">Provides sub-millimeter precision for cardiac, urologic, and oncologic procedures, reducing hospital stay by up to 60%.</p>
+            </div>
+          </div>
+
+          <!-- Tech 2 -->
+          <div class="tech-card reveal-fade-up delay-100">
+            <div class="tech-img-box">
+              <img src="assets/images/department-mri.jpg" alt="3T MRI Diagnostic Center" loading="lazy">
+            </div>
+            <div class="tech-content">
+              <h3 class="tech-title">3T High-Field MRI &amp; Spectral CT</h3>
+              <p class="tech-desc">Ultra-clear neuro-vascular imaging with reduced scan times and AI-assisted anomaly detection algorithms.</p>
+            </div>
+          </div>
+
+          <!-- Tech 3 -->
+          <div class="tech-card reveal-fade-up delay-200">
+            <div class="tech-img-box">
+              <img src="assets/images/department-icu.jpg" alt="Hybrid ICU &amp; Recovery Suites" loading="lazy">
+            </div>
+            <div class="tech-content">
+              <h3 class="tech-title">Continuous Telemetric Hybrid ICUs</h3>
+              <p class="tech-desc">Real-time vital telemetry with negative-pressure isolation pods and direct bedside specialist oversight.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DEPARTMENTS — SECTION 4: APPOINTMENT CTA
+         ========================================================================== -->
+    <section class="section-py" id="dept-cta">
+      <div class="container">
+        <div class="conversion-banner reveal-fade-up">
+          <div class="conversion-grid">
+            <div>
+              <span class="badge-tag badge-white mb-3">Priority Scheduling</span>
+              <h2 class="conversion-title">Need a Specialized Clinical Evaluation?</h2>
+              <p class="conversion-text">
+                Book a direct appointment with any of our 24+ medical departments. Our triage specialists ensure you are connected with the optimal consultant.
+              </p>
+              <div class="conversion-actions">
+                <a href="appointment.html" class="btn btn-teal btn-lg">
+                  <i class="bi bi-calendar2-check-fill"></i> Book an Appointment
+                </a>
+                <a href="doctors.html" class="btn btn-outline-white btn-lg">
+                  <i class="bi bi-people-fill"></i> View Department Specialists
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="conversion-visual-card text-center">
+                <div class="emergency-icon-circle mx-auto mb-3" style="margin: 0 auto 1rem;">
+                  <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <h4 style="color: #FFFFFF; margin-bottom: 0.5rem;">Direct Outpatient Booking</h4>
+                <p style="color: #CBD5E1; font-size: 0.9rem; margin-bottom: 1.25rem;">
+                  No referral required for most specialty consultations.
+                </p>
+                <a href="appointment.html" class="btn btn-primary w-100" style="display: flex; justify-content: center;">
+                  Select Your Department Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- STRICT REUSABLE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo mb-3" style="display: inline-flex;">
+            <div class="brand-icon">
+              <i class="bi bi-heart-pulse-fill"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name" style="color: #FFFFFF;">VITALIS</span>
+              <span class="brand-tagline" style="color: #94A3B8;">Medical Center</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Vitalis Medical Center is a premier international healthcare institution recognized for clinical excellence, pioneering research, and patient-first compassionate care.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+            <li><a href="departments.html"><i class="bi bi-chevron-right"></i> Departments</a></li>
+            <li><a href="doctors.html"><i class="bi bi-chevron-right"></i> Specialist Doctors</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Patient Support</h4>
+          <ul class="footer-nav-list">
+            <li><a href="appointment.html"><i class="bi bi-chevron-right"></i> Book Appointment</a></li>
+            <li><a href="contact.html#emergency"><i class="bi bi-chevron-right"></i> 24/7 Emergency Desk</a></li>
+            <li><a href="departments.html"><i class="bi bi-chevron-right"></i> Diagnostic Imaging</a></li>
+            <li><a href="contact.html#visiting-hours"><i class="bi bi-chevron-right"></i> Visitor Guidelines</a></li>
+            <li><a href="about.html#values"><i class="bi bi-chevron-right"></i> Quality &amp; Safety</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact &amp; Campus</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>450 Healthcare Boulevard, Suite 100, Metropolitan City, NY 10016</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <span>General: </span><a href="tel:+18005558482">+1 (800) 555-8482</a><br>
+              <span>Emergency: </span><a href="tel:+18005559911" style="color: #FDA4AF; font-weight: 700;">+1 (800) 555-9911</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:care@vitalismedical.org">care@vitalismedical.org</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Emergency: 24/7 • OPD: Mon–Sat 8am–8pm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <div>
+            &copy; 2026 Vitalis Medical Center. All Rights Reserved.
+          </div>
+          <div class="footer-legal-links">
+            <a href="404.html">Privacy Policy</a>
+            <a href="404.html">Terms of Service</a>
+            <a href="404.html">Patient Rights</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

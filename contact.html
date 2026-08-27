@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Campus Location | Vitalis Medical Center</title>
+  <meta name="description" content="Get in touch with Vitalis Medical Center. Find campus directions, emergency numbers, outpatient department hours, and inquiry forms.">
+  <meta name="theme-color" content="#0A1E3F">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- STRICT NAVBAR -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="Vitalis Medical Center Home">
+        <div class="brand-icon">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VITALIS</span>
+          <span class="brand-tagline">Medical Center</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="departments.html" class="nav-link">Departments</a>
+        <a href="doctors.html" class="nav-link">Doctors</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-cta-wrapper">
+        <a href="appointment.html" class="btn btn-nav-appointment" id="navAppointmentBtn">
+          <i class="bi bi-calendar2-check-fill"></i> FOR APPOINTMENTS
+        </a>
+      </div>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <!-- Close Drawer Button -->
+    <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <div class="mobile-menu-list">
+      <a href="index.html" class="mobile-menu-link">
+        <span>Home</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="about.html" class="mobile-menu-link">
+        <span>About</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="departments.html" class="mobile-menu-link">
+        <span>Departments</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="doctors.html" class="mobile-menu-link">
+        <span>Doctors</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="contact.html" class="mobile-menu-link active">
+        <span>Contact</span> <i class="bi bi-chevron-right"></i>
+      </a>
+    </div>
+    <div class="mobile-drawer-cta mt-auto">
+      <a href="appointment.html" class="btn btn-nav-appointment w-100 text-center" style="display: block; text-align: center;">
+        <i class="bi bi-calendar2-check-fill"></i> FOR APPOINTMENTS
+      </a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         CONTACT — SECTION 1: CONTACT HERO
+         ========================================================================== -->
+    <section class="inner-hero" id="contact-hero">
+      <div class="container">
+        <div class="reveal-fade-up text-center" style="max-width: 780px; margin: 0 auto;">
+          <nav class="breadcrumb-nav justify-content-center" aria-label="Breadcrumb" style="justify-content: center;">
+            <a href="index.html">Home</a>
+            <i class="bi bi-chevron-right"></i>
+            <span class="active">Contact Us</span>
+          </nav>
+          <span class="badge-tag badge-teal">We Are Here For You</span>
+          <h1 class="inner-hero-title">Connect with Vitalis Medical Center</h1>
+          <p class="inner-hero-lead" style="margin: 0 auto;">
+            Whether you need urgent emergency support, outpatient booking assistance, or international patient services, our coordination staff is on standby.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT — SECTION 2: CONTACT INFORMATION (5 ESSENTIAL TOUCHPOINTS)
+         ========================================================================== -->
+    <section class="section-py" id="contact-info">
+      <div class="container">
+        <div class="contact-info-grid">
+          <!-- Touchpoint 1: Emergency -->
+          <div class="contact-card emergency-card reveal-fade-up">
+            <div class="contact-card-icon"><i class="bi bi-telephone-inbound-fill"></i></div>
+            <h3 class="contact-card-title">24/7 Emergency Line</h3>
+            <p class="contact-card-desc">Immediate trauma, cardiac, and acute care dispatch hotline.</p>
+            <a href="tel:+18005559911" class="contact-card-link">+1 (800) 555-9911</a>
+          </div>
+
+          <!-- Touchpoint 2: General Inquiries -->
+          <div class="contact-card reveal-fade-up delay-100">
+            <div class="contact-card-icon"><i class="bi bi-headset"></i></div>
+            <h3 class="contact-card-title">General Inquiries</h3>
+            <p class="contact-card-desc">Outpatient registration, patient relations, and operator desk.</p>
+            <a href="tel:+18005558482" class="contact-card-link">+1 (800) 555-8482</a>
+          </div>
+
+          <!-- Touchpoint 3: Email Support -->
+          <div class="contact-card reveal-fade-up delay-200">
+            <div class="contact-card-icon"><i class="bi bi-envelope-check-fill"></i></div>
+            <h3 class="contact-card-title">Email Desk</h3>
+            <p class="contact-card-desc">General patient correspondence and report submission.</p>
+            <a href="mailto:care@vitalismedical.org" class="contact-card-link">care@vitalismedical.org</a>
+          </div>
+
+          <!-- Touchpoint 4: Visiting Hours -->
+          <div class="contact-card reveal-fade-up delay-300" id="visiting-hours">
+            <div class="contact-card-icon"><i class="bi bi-clock-history"></i></div>
+            <h3 class="contact-card-title">Visiting Hours</h3>
+            <p class="contact-card-desc">General Wards: 10am–1pm &amp; 4pm–8pm. ICUs: 11am–12pm.</p>
+            <span class="contact-card-link" style="color: var(--color-teal-accent);">7 Days a Week</span>
+          </div>
+        </div>
+
+        <!-- Social Media Channels -->
+        <div class="contact-socials reveal-fade-up">
+          <p class="contact-socials-title">Follow our official channels for clinical updates, wellness articles, and hospital notifications:</p>
+          <div class="contact-social-icons">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT — SECTION 3: CONTACT FORM + MAP & DIRECTIONS
+         ========================================================================== -->
+    <section class="section-py bg-surface" id="contact-form-section">
+      <div class="container">
+        <div class="contact-form-grid">
+          <!-- Left: Validated Contact Form -->
+          <div class="form-box reveal-fade-up">
+            <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--color-primary-navy);">Send Us an Inquiry</h2>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 2rem;">
+              Fill out the secure form below. Our patient support officers will respond promptly within 24 hours.
+            </p>
+
+            <!-- Success Alert Feedback -->
+            <div id="contactFeedbackToast" style="display: none; background: var(--color-emerald-light); border: 1px solid var(--color-emerald); color: #065F46; padding: 1rem 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+              <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700;">
+                <i class="bi bi-check-circle-fill" style="font-size: 1.2rem;"></i> Thank you! Your message has been sent successfully.
+              </div>
+              <p style="margin: 0.25rem 0 0 1.7rem; font-size: 0.85rem;">Our clinical coordination coordinator will contact you shortly.</p>
+            </div>
+
+            <form id="vitalisContactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactFullName" class="form-label">Full Name <span class="required">*</span></label>
+                  <input type="text" id="contactFullName" class="form-control" placeholder="e.g. Eleanor Vance" required>
+                  <div class="form-feedback invalid-feedback">Please enter your full name.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="contactEmail" class="form-control" placeholder="e.g. eleanor@example.com" required>
+                  <div class="form-feedback invalid-feedback">Please enter a valid email address.</div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactPhone" class="form-label">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. +1 (555) 019-2834" required>
+                  <div class="form-feedback invalid-feedback">Please provide your contact number.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject" class="form-label">Subject / Purpose <span class="required">*</span></label>
+                  <select id="contactSubject" class="form-control" required>
+                    <option value="">Select Topic...</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Doctor Inquiry">Doctor Consultation Question</option>
+                    <option value="Billing / Insurance">Insurance &amp; Billing Desk</option>
+                    <option value="International Patient">International Patient Desk</option>
+                    <option value="Feedback">Patient Experience Feedback</option>
+                  </select>
+                  <div class="form-feedback invalid-feedback">Please select a subject.</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Your Message <span class="required">*</span></label>
+                <textarea id="contactMessage" class="form-control" placeholder="Describe your inquiry, medical questions, or request..." required></textarea>
+                <div class="form-feedback invalid-feedback">Please enter your message details.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-100" style="display: flex; justify-content: center;">
+                <i class="bi bi-send-fill"></i> Submit Inquiry
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Campus Map & Transit Details -->
+          <div class="map-side-card reveal-fade-up delay-200">
+            <div class="map-visual-wrap">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4503704207973!2d-73.98083862347102!3d40.75211993505707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590123ef21d5%3A0x6b8f38855e9c0c0f!2sGrand%20Central%20Terminal!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                title="Vitalis Medical Center Campus Map"
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="map-details">
+              <h3 style="font-size: 1.15rem; color: var(--color-primary-navy); margin-bottom: 0.5rem;">Main Medical Campus</h3>
+              
+              <div class="map-detail-item">
+                <i class="bi bi-geo-alt-fill map-detail-icon"></i>
+                <div class="map-detail-text">
+                  <h5>Hospital Address</h5>
+                  <p>450 Healthcare Boulevard, Suite 100, Metropolitan City, NY 10016</p>
+                </div>
+              </div>
+
+              <div class="map-detail-item">
+                <i class="bi bi-p-square-fill map-detail-icon" style="color: var(--color-teal-accent);"></i>
+                <div class="map-detail-text">
+                  <h5>Patient &amp; Visitor Parking</h5>
+                  <p>Underground 24/7 valet parking available at Tower B Entrance (Complimentary for emergency patients).</p>
+                </div>
+              </div>
+
+              <div class="map-detail-item">
+                <i class="bi bi-train-front-fill map-detail-icon"></i>
+                <div class="map-detail-text">
+                  <h5>Public Transit</h5>
+                  <p>Direct subway access via Grand Central Transit Hub (Lines 4, 5, 6, 7 &amp; S).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT — SECTION 4: EMERGENCY / APPOINTMENT CTA
+         ========================================================================== -->
+    <section class="section-py" id="emergency">
+      <div class="container">
+        <div class="conversion-banner reveal-fade-up">
+          <div class="conversion-grid">
+            <div>
+              <span class="badge-tag badge-white mb-3">Critical Support</span>
+              <h2 class="conversion-title">Need Immediate Medical Assistance?</h2>
+              <p class="conversion-text">
+                For life-threatening emergencies, cardiac distress, or acute trauma, dial our 24/7 Level 1 Emergency Response desk immediately.
+              </p>
+              <div class="conversion-actions">
+                <a href="tel:+18005559911" class="btn btn-teal btn-lg" style="background-color: var(--color-emergency-red); border-color: var(--color-emergency-red);">
+                  <i class="bi bi-telephone-fill"></i> Call Emergency: +1 (800) 555-9911
+                </a>
+                <a href="appointment.html" class="btn btn-outline-white btn-lg">
+                  <i class="bi bi-calendar-check"></i> Book Non-Urgent Visit
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="conversion-visual-card">
+                <h4 style="color: #FFFFFF; margin-bottom: 0.75rem;"><i class="bi bi-truck" style="color: var(--color-teal-accent);"></i> Rapid Ambulance Dispatch</h4>
+                <p style="color: #CBD5E1; font-size: 0.9rem; margin-bottom: 1.25rem;">
+                  Advanced cardiac mobile telemetry ambulances stationed across all metro quadrants for rapid response times.
+                </p>
+                <div style="background: rgba(0, 0, 0, 0.25); padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid rgba(255, 255, 255, 0.1);">
+                  <span style="font-size: 0.75rem; color: #94A3B8; display: block;">Average Emergency Response Time</span>
+                  <strong style="font-size: 1.1rem; color: #FFFFFF;">under 8 minutes</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- STRICT REUSABLE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo mb-3" style="display: inline-flex;">
+            <div class="brand-icon">
+              <i class="bi bi-heart-pulse-fill"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name" style="color: #FFFFFF;">VITALIS</span>
+              <span class="brand-tagline" style="color: #94A3B8;">Medical Center</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Vitalis Medical Center is a premier international healthcare institution recognized for clinical excellence, pioneering research, and patient-first compassionate care.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+            <li><a href="departments.html"><i class="bi bi-chevron-right"></i> Departments</a></li>
+            <li><a href="doctors.html"><i class="bi bi-chevron-right"></i> Specialist Doctors</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Patient Support</h4>
+          <ul class="footer-nav-list">
+            <li><a href="appointment.html"><i class="bi bi-chevron-right"></i> Book Appointment</a></li>
+            <li><a href="contact.html#emergency"><i class="bi bi-chevron-right"></i> 24/7 Emergency Desk</a></li>
+            <li><a href="departments.html"><i class="bi bi-chevron-right"></i> Diagnostic Imaging</a></li>
+            <li><a href="contact.html#visiting-hours"><i class="bi bi-chevron-right"></i> Visitor Guidelines</a></li>
+            <li><a href="about.html#values"><i class="bi bi-chevron-right"></i> Quality &amp; Safety</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact &amp; Campus</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>450 Healthcare Boulevard, Suite 100, Metropolitan City, NY 10016</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <span>General: </span><a href="tel:+18005558482">+1 (800) 555-8482</a><br>
+              <span>Emergency: </span><a href="tel:+18005559911" style="color: #FDA4AF; font-weight: 700;">+1 (800) 555-9911</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:care@vitalismedical.org">care@vitalismedical.org</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Emergency: 24/7 • OPD: Mon–Sat 8am–8pm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <div>
+            &copy; 2026 Vitalis Medical Center. All Rights Reserved.
+          </div>
+          <div class="footer-legal-links">
+            <a href="404.html">Privacy Policy</a>
+            <a href="404.html">Terms of Service</a>
+            <a href="404.html">Patient Rights</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

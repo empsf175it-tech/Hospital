@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitalis Medical Center | World-Class Healthcare & Specialized Medicine</title>
+  <meta name="description" content="Vitalis Medical Center provides exceptional, world-class healthcare with board-certified specialist doctors, 24/7 emergency response, and pioneering clinical technology.">
+  <meta name="keywords" content="hospital, healthcare, medical center, cardiology, neurosurgery, orthopedic surgery, emergency medicine, doctors, appointment">
+  <meta name="theme-color" content="#0A1E3F">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Vitalis Medical Center | World-Class Healthcare">
+  <meta property="og:description" content="Pioneering Medicine. Exceptional Care. Human at Heart. Book an appointment with premier specialists.">
+  <meta property="og:type" content="website">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & STRICT NAVBAR
+       Items: Home, About, Departments, Doctors, Contact, FOR APPOINTMENTS
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Vitalis Medical Center Home">
+        <div class="brand-icon">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VITALIS</span>
+          <span class="brand-tagline">Medical Center</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="departments.html" class="nav-link">Departments</a>
+        <a href="doctors.html" class="nav-link">Doctors</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Primary CTA: FOR APPOINTMENTS -->
+      <div class="nav-cta-wrapper">
+        <a href="appointment.html" class="btn btn-nav-appointment" id="navAppointmentBtn">
+          <i class="bi bi-calendar2-check-fill"></i> FOR APPOINTMENTS
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <!-- Close Drawer Button -->
+    <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <div class="mobile-menu-list">
+      <a href="index.html" class="mobile-menu-link active">
+        <span>Home</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="about.html" class="mobile-menu-link">
+        <span>About</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="departments.html" class="mobile-menu-link">
+        <span>Departments</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="doctors.html" class="mobile-menu-link">
+        <span>Doctors</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="contact.html" class="mobile-menu-link">
+        <span>Contact</span> <i class="bi bi-chevron-right"></i>
+      </a>
+    </div>
+    <div class="mobile-drawer-cta mt-auto">
+      <a href="appointment.html" class="btn btn-nav-appointment w-100 text-center" style="display: block; text-align: center;">
+        <i class="bi bi-calendar2-check-fill"></i> FOR APPOINTMENTS
+      </a>
+      <div class="mt-4 pt-3 text-center" style="border-top: 1px solid var(--color-border);">
+        <span style="font-size: 0.8rem; color: var(--color-text-muted);">24/7 Emergency Line</span>
+        <a href="tel:+18005558482" style="display: block; font-weight: 800; color: var(--color-emergency-red); font-size: 1.1rem; margin-top: 0.2rem;">
+          <i class="bi bi-telephone-fill"></i> +1 (800) 555-VITA
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         HOME — SECTION 1: PREMIUM HERO
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Editorial Medical Storytelling & CTAs -->
+          <div class="hero-content reveal-fade-up">
+            <div class="hero-credibility">
+              <span class="pulse-dot"></span>
+              <span>JCI Accredited &amp; Magnet Recognized Healthcare</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Exceptional Care. <br>
+              <span class="text-gradient">Advanced Medicine.</span> <br>
+              Human at Heart.
+            </h1>
+            
+            <p class="hero-lead">
+              At Vitalis Medical Center, we combine globally recognized clinical specialists, breakthrough surgical innovations, and compassionate patient-centered healing.
+            </p>
+            
+            <div class="hero-actions">
+              <a href="appointment.html" class="btn btn-primary btn-lg">
+                <i class="bi bi-calendar-check"></i> Book an Appointment
+              </a>
+              <a href="departments.html" class="btn btn-secondary btn-lg">
+                <i class="bi bi-grid-3x3-gap"></i> Explore Departments
+              </a>
+            </div>
+
+            <!-- Trust Bar / Patient Indicators -->
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <div class="trust-avatar-group">
+                  <img src="assets/images/avatar-1.jpg" alt="Patient review" class="trust-avatar">
+                  <img src="assets/images/avatar-2.jpg" alt="Patient review" class="trust-avatar">
+                  <img src="assets/images/avatar-3.jpg" alt="Patient review" class="trust-avatar">
+                  <img src="assets/images/avatar-4.jpg" alt="Patient review" class="trust-avatar">
+                </div>
+                <div class="trust-info">
+                  <p>99.4% Positive</p>
+                  <span>Patient Recovery Rate</span>
+                </div>
+              </div>
+
+              <div class="trust-item">
+                <div style="font-size: 1.75rem; color: var(--color-teal-accent);">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div class="trust-info">
+                  <p>ISO 9001:2026</p>
+                  <span>Certified Protocols</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Hero Doctor -->
+          <div class="hero-visual reveal-fade-up delay-200">
+            <div class="hero-image-wrapper">
+              <img src="assets/images/hero-doctor-tablet.jpg" 
+                   alt="Lead Specialist Doctor at Vitalis" 
+                   class="hero-main-img" 
+                   loading="eager">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOME — SECTION 2: TRUST / HOSPITAL HIGHLIGHTS (STATS & CREDIBILITY)
+         ========================================================================== -->
+    <section class="stats-section section-py" id="highlights">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="badge-tag badge-white">Institutional Excellence</span>
+          <h2 class="section-title text-white">Setting the Global Standard in Healthcare</h2>
+          <p class="section-subtitle text-light" style="color: #CBD5E1;">
+            Decades of continuous clinical innovation, world-class medical specialists, and an unwavering commitment to patient life.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-card reveal-fade-up">
+            <div class="stat-icon"><i class="bi bi-hospital"></i></div>
+            <div class="stat-number" data-target="28" data-suffix="+">0</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card reveal-fade-up delay-100">
+            <div class="stat-icon"><i class="bi bi-person-badge"></i></div>
+            <div class="stat-number" data-target="180" data-suffix="+">0</div>
+            <div class="stat-label">Specialist Doctors</div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card reveal-fade-up delay-200">
+            <div class="stat-icon"><i class="bi bi-people"></i></div>
+            <div class="stat-number" data-target="65000" data-suffix="+">0</div>
+            <div class="stat-label">Patients Served</div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card reveal-fade-up delay-300">
+            <div class="stat-icon"><i class="bi bi-diagram-3"></i></div>
+            <div class="stat-number" data-target="24" data-suffix="+">0</div>
+            <div class="stat-label">Medical Departments</div>
+          </div>
+
+          <!-- Stat 5 -->
+          <div class="stat-card reveal-fade-up delay-400">
+            <div class="stat-icon"><i class="bi bi-lightning-charge"></i></div>
+            <div class="stat-number" data-target="24" data-suffix="/7">0</div>
+            <div class="stat-label">Emergency Care</div>
+          </div>
+        </div>
+
+        <div class="stats-supporting-message reveal-fade-up">
+          <p>
+            <i class="bi bi-quote" style="color: var(--color-teal-accent); font-size: 1.4rem;"></i>
+            "Every procedure, diagnosis, and patient interaction at Vitalis is guided by one unyielding philosophy: delivering clinical brilliance with genuine human warmth."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOME — SECTION 3: DEPARTMENTS SHOWCASE
+         ========================================================================== -->
+    <section class="section-py bg-surface" id="departments">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="badge-tag">Clinical Specializations</span>
+          <h2 class="section-title">World-Class Medical Departments</h2>
+          <p class="section-subtitle">
+            From precision cardiovascular care to pioneering neurosurgery, explore our dedicated institutes of advanced medicine.
+          </p>
+        </div>
+
+        <div class="dept-grid">
+          <!-- Dept 1: Cardiology -->
+          <div class="dept-card reveal-fade-up">
+            <div class="dept-icon-wrapper">
+              <i class="bi bi-heart-pulse"></i>
+            </div>
+            <h3 class="dept-title">Cardiology</h3>
+            <p class="dept-desc">
+              Comprehensive interventional cardiology, cardiac catheterization, arrhythmia management, and heart failure therapies.
+            </p>
+            <a href="departments.html#cardiology" class="dept-link">
+              Explore Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Dept 2: Neurology -->
+          <div class="dept-card reveal-fade-up delay-100">
+            <div class="dept-icon-wrapper">
+              <i class="bi bi-activity"></i>
+            </div>
+            <h3 class="dept-title">Neurology &amp; Spine</h3>
+            <p class="dept-desc">
+              Advanced brain tumor resection, neuro-rehabilitation, stroke management, and minimally invasive spinal reconstructions.
+            </p>
+            <a href="departments.html#neurology" class="dept-link">
+              Explore Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Dept 3: Orthopedics -->
+          <div class="dept-card reveal-fade-up delay-200">
+            <div class="dept-icon-wrapper">
+              <i class="bi bi-bandaid"></i>
+            </div>
+            <h3 class="dept-title">Orthopedics</h3>
+            <p class="dept-desc">
+              Robotic-assisted joint replacements, sports injury rehabilitation, complex fracture care, and musculoskeletal therapies.
+            </p>
+            <a href="departments.html#orthopedics" class="dept-link">
+              Explore Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Dept 4: Pediatrics -->
+          <div class="dept-card reveal-fade-up delay-300">
+            <div class="dept-icon-wrapper">
+              <i class="bi bi-emoji-smile"></i>
+            </div>
+            <h3 class="dept-title">Pediatric Care</h3>
+            <p class="dept-desc">
+              Compassionate pediatric subspecialties, Level IV Neonatal ICU, adolescent wellness, and childhood developmental medicine.
+            </p>
+            <a href="departments.html#pediatrics" class="dept-link">
+              Explore Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Dept 5: Oncology -->
+          <div class="dept-card reveal-fade-up">
+            <div class="dept-icon-wrapper">
+              <i class="bi bi-virus2"></i>
+            </div>
+            <h3 class="dept-title">Oncology</h3>
+            <p class="dept-desc">
+              Precision targeted chemotherapy, modern linear accelerator radiotherapy, immunotherapies, and compassionate surgical oncology.
+            </p>
+            <a href="departments.html#oncology" class="dept-link">
+              Explore Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Dept 6: General Surgery -->
+          <div class="dept-card reveal-fade-up delay-100">
+            <div class="dept-icon-wrapper">
+              <i class="bi bi-scissors"></i>
+            </div>
+            <h3 class="dept-title">General Surgery</h3>
+            <p class="dept-desc">
+              da Vinci robotic surgery, laparoscopic gastrointestinal procedures, trauma interventions, and outpatient ambulatory operations.
+            </p>
+            <a href="departments.html#surgery" class="dept-link">
+              Explore Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Dept 7: Dermatology -->
+          <div class="dept-card reveal-fade-up delay-200">
+            <div class="dept-icon-wrapper">
+              <i class="bi bi-flower1"></i>
+            </div>
+            <h3 class="dept-title">Dermatology</h3>
+            <p class="dept-desc">
+              Clinical Mohs micrographic surgery, skin cancer screening, phototherapy, and specialized aesthetic laser restoration.
+            </p>
+            <a href="departments.html#dermatology" class="dept-link">
+              Explore Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Dept 8: Emergency Medicine -->
+          <div class="dept-card reveal-fade-up delay-300">
+            <div class="dept-icon-wrapper">
+              <i class="bi bi-truck"></i>
+            </div>
+            <h3 class="dept-title">24/7 Emergency Care</h3>
+            <p class="dept-desc">
+              Dedicated Level 1 Trauma Center, zero-wait acute cardiac triage, hyperbaric oxygen chambers, and rapid ambulance dispatch.
+            </p>
+            <a href="departments.html#emergency" class="dept-link">
+              Explore Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="dept-showcase-footer reveal-fade-up">
+          <a href="departments.html" class="btn btn-primary btn-lg">
+            <i class="bi bi-grid-fill"></i> View All 24+ Departments
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOME — SECTION 4: FEATURED DOCTORS / SPECIALISTS
+         ========================================================================== -->
+    <section class="section-py" id="doctors">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="badge-tag badge-teal">Our Medical Faculty</span>
+          <h2 class="section-title">Meet Our Distinguished Specialists</h2>
+          <p class="section-subtitle">
+            Trained at the world's most prestigious medical institutions, our department chairs provide compassionate, evidence-based care.
+          </p>
+        </div>
+
+        <div class="doctors-grid">
+          <!-- Doctor 1 -->
+          <div class="doctor-card reveal-fade-up">
+            <div class="doctor-img-box">
+              <img src="assets/images/doctor-mitchell.jpg" 
+                   alt="Dr. Sarah Mitchell - Senior Cardiologist" 
+                   class="doctor-img"
+                   loading="lazy">
+              <span class="doctor-badge">Cardiology</span>
+            </div>
+            <div class="doctor-info">
+              <span class="doctor-specialty">Heart &amp; Vascular Institute</span>
+              <h3 class="doctor-name">Dr. Sarah Mitchell</h3>
+              <p class="doctor-credentials">MD, FACC • Harvard Medical School</p>
+              <div class="doctor-meta">
+                <span class="doctor-experience"><i class="bi bi-clock-history"></i> 18+ Years Exp.</span>
+                <a href="#view-bio" class="doctor-btn-profile" data-doctor-modal="sarah-mitchell">
+                  View Bio <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 2 -->
+          <div class="doctor-card reveal-fade-up delay-100">
+            <div class="doctor-img-box">
+              <img src="assets/images/doctor-carter.jpg" 
+                   alt="Dr. Michael Carter - Chief Neurosurgeon" 
+                   class="doctor-img"
+                   loading="lazy">
+              <span class="doctor-badge">Neurology</span>
+            </div>
+            <div class="doctor-info">
+              <span class="doctor-specialty">Neuroscience &amp; Spine</span>
+              <h3 class="doctor-name">Dr. Michael Carter</h3>
+              <p class="doctor-credentials">MD, FAANS • Stanford University</p>
+              <div class="doctor-meta">
+                <span class="doctor-experience"><i class="bi bi-clock-history"></i> 15+ Years Exp.</span>
+                <a href="#view-bio" class="doctor-btn-profile" data-doctor-modal="michael-carter">
+                  View Bio <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 3 -->
+          <div class="doctor-card reveal-fade-up delay-200">
+            <div class="doctor-img-box">
+              <img src="assets/images/doctor-rostova.jpg" 
+                   alt="Dr. Elena Rostova - Pediatric Specialist" 
+                   class="doctor-img"
+                   loading="lazy">
+              <span class="doctor-badge">Pediatrics</span>
+            </div>
+            <div class="doctor-info">
+              <span class="doctor-specialty">Pediatric Medicine</span>
+              <h3 class="doctor-name">Dr. Elena Rostova</h3>
+              <p class="doctor-credentials">MD, FAAP • Oxford Medical Sciences</p>
+              <div class="doctor-meta">
+                <span class="doctor-experience"><i class="bi bi-clock-history"></i> 14+ Years Exp.</span>
+                <a href="#view-bio" class="doctor-btn-profile" data-doctor-modal="elena-rostova">
+                  View Bio <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 4 -->
+          <div class="doctor-card reveal-fade-up delay-300">
+            <div class="doctor-img-box">
+              <img src="assets/images/doctor-vance.jpg" 
+                   alt="Dr. Marcus Vance - Orthopedic Surgeon" 
+                   class="doctor-img"
+                   loading="lazy">
+              <span class="doctor-badge">Orthopedics</span>
+            </div>
+            <div class="doctor-info">
+              <span class="doctor-specialty">Joint Reconstruction</span>
+              <h3 class="doctor-name">Dr. Marcus Vance</h3>
+              <p class="doctor-credentials">MD, FAAOS • Columbia University</p>
+              <div class="doctor-meta">
+                <span class="doctor-experience"><i class="bi bi-clock-history"></i> 16+ Years Exp.</span>
+                <a href="#view-bio" class="doctor-btn-profile" data-doctor-modal="marcus-vance">
+                  View Bio <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-showcase-footer reveal-fade-up">
+          <a href="doctors.html" class="btn btn-secondary btn-lg">
+            <i class="bi bi-people-fill"></i> Meet Our Full Medical Team
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOME — SECTION 5: APPOINTMENT / FINAL CONVERSION SECTION
+         ========================================================================== -->
+    <section class="section-py bg-surface" id="conversion">
+      <div class="container">
+        <div class="conversion-banner reveal-fade-up">
+          <div class="conversion-grid">
+            <!-- Left Side: Conversion Pitch -->
+            <div>
+              <span class="badge-tag badge-white mb-3">Your Journey to Recovery</span>
+              <h2 class="conversion-title">Your Health Deserves Exceptional Care.</h2>
+              <p class="conversion-text">
+                Schedule a priority consultation with our specialized medical consultants today or contact our 24/7 emergency response team for immediate assistance.
+              </p>
+              
+              <div class="conversion-actions">
+                <a href="appointment.html" class="btn btn-teal btn-lg">
+                  <i class="bi bi-calendar2-check-fill"></i> Book an Appointment
+                </a>
+                <a href="contact.html" class="btn btn-outline-white btn-lg">
+                  <i class="bi bi-geo-alt-fill"></i> Contact Our Team
+                </a>
+              </div>
+
+              <!-- Direct Hotline Ribbon -->
+              <div class="conversion-emergency-call">
+                <div class="emergency-icon-circle">
+                  <i class="bi bi-telephone-inbound-fill"></i>
+                </div>
+                <div class="emergency-text-group">
+                  <p>24/7 Immediate Medical Hotline</p>
+                  <a href="tel:+18005558482">+1 (800) 555-VITA</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Care Guarantees Card -->
+            <div>
+              <div class="conversion-visual-card">
+                <h4 style="color: #FFFFFF; font-size: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                  <i class="bi bi-shield-fill-check" style="color: var(--color-teal-accent);"></i> The Vitalis Patient Promise
+                </h4>
+                <div class="conversion-perks-list">
+                  <div class="perk-item">
+                    <div class="perk-icon"><i class="bi bi-lightning"></i></div>
+                    <div class="perk-text">
+                      <h5>Rapid Outpatient Scheduling</h5>
+                      <p>Guaranteed initial specialist consultation within 48 hours of booking.</p>
+                    </div>
+                  </div>
+
+                  <div class="perk-item">
+                    <div class="perk-icon"><i class="bi bi-file-earmark-medical"></i></div>
+                    <div class="perk-text">
+                      <h5>Seamless Digital Health Records</h5>
+                      <p>Secure online portal with instant access to lab results and prescriptions.</p>
+                    </div>
+                  </div>
+
+                  <div class="perk-item">
+                    <div class="perk-icon"><i class="bi bi-person-heart"></i></div>
+                    <div class="perk-text">
+                      <h5>Dedicated Patient Care Coordinator</h5>
+                      <p>Personal medical liaison to assist throughout your diagnostic journey.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       REUSABLE FOOTER (STRICT 4 COLUMNS)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Hospital Logo & About -->
+        <div>
+          <a href="index.html" class="brand-logo mb-3" style="display: inline-flex;">
+            <div class="brand-icon">
+              <i class="bi bi-heart-pulse-fill"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name" style="color: #FFFFFF;">VITALIS</span>
+              <span class="brand-tagline" style="color: #94A3B8;">Medical Center</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Vitalis Medical Center is a premier international healthcare institution recognized for clinical excellence, pioneering research, and patient-first compassionate care.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Navigation -->
+        <div>
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+            <li><a href="departments.html"><i class="bi bi-chevron-right"></i> Departments</a></li>
+            <li><a href="doctors.html"><i class="bi bi-chevron-right"></i> Specialist Doctors</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Patient Support -->
+        <div>
+          <h4 class="footer-col-title">Patient Support</h4>
+          <ul class="footer-nav-list">
+            <li><a href="appointment.html"><i class="bi bi-chevron-right"></i> Book Appointment</a></li>
+            <li><a href="contact.html#emergency"><i class="bi bi-chevron-right"></i> 24/7 Emergency Desk</a></li>
+            <li><a href="departments.html"><i class="bi bi-chevron-right"></i> Diagnostic Imaging</a></li>
+            <li><a href="contact.html#visiting-hours"><i class="bi bi-chevron-right"></i> Visitor Guidelines</a></li>
+            <li><a href="about.html#values"><i class="bi bi-chevron-right"></i> Quality &amp; Safety</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div>
+          <h4 class="footer-col-title">Contact &amp; Campus</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>450 Healthcare Boulevard, Suite 100, Metropolitan City, NY 10016</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <span>General: </span><a href="tel:+18005558482">+1 (800) 555-8482</a><br>
+              <span>Emergency: </span><a href="tel:+18005559911" style="color: #FDA4AF; font-weight: 700;">+1 (800) 555-9911</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:care@vitalismedical.org">care@vitalismedical.org</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Emergency: 24/7 • OPD: Mon–Sat 8am–8pm</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <div>
+            &copy; 2026 Vitalis Medical Center. All Rights Reserved. Client-Ready Hospital Website.
+          </div>
+          <div class="footer-legal-links">
+            <a href="404.html">Privacy Policy</a>
+            <a href="404.html">Terms of Service</a>
+            <a href="404.html">Patient Rights</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- ==========================================================================
+       DOCTOR BIO MODAL DIALOG
+       ========================================================================== -->
+  <div class="modal-overlay" id="doctorModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalDocName">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal window"><i class="bi bi-x-lg"></i></button>
+      <div class="modal-body">
+        <span class="badge-tag badge-teal" id="modalDocTitle">Senior Consultant</span>
+        <h3 id="modalDocName" style="color: var(--color-primary-navy); margin-top: 0.5rem; margin-bottom: 0.5rem;">Doctor Name</h3>
+        <p id="modalDocExp" style="font-weight: 700; color: var(--color-blue-royal); font-size: 0.9rem; margin-bottom: 1rem;">15+ Years Clinical Experience</p>
+        
+        <div style="background: var(--color-bg-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.25rem;">
+          <h5 style="font-size: 0.9rem; color: var(--color-text-title); margin-bottom: 0.35rem;"><i class="bi bi-mortarboard-fill" style="color: var(--color-blue-royal);"></i> Medical Education &amp; Fellowship</h5>
+          <p id="modalDocEdu" style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 0.85rem;"></p>
+          
+          <h5 style="font-size: 0.9rem; color: var(--color-text-title); margin-bottom: 0.35rem;"><i class="bi bi-trophy-fill" style="color: #F59E0B;"></i> Board Certifications &amp; Honours</h5>
+          <p id="modalDocAwards" style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0;"></p>
+        </div>
+
+        <h5 style="font-size: 0.95rem; color: var(--color-primary-navy); margin-bottom: 0.45rem;">Clinical Biography</h5>
+        <p id="modalDocBio" style="font-size: 0.9rem; color: var(--color-text-body); line-height: 1.6; margin-bottom: 1.25rem;"></p>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-top: 1px solid var(--color-border); padding-top: 1.25rem;">
+          <div>
+            <span style="font-size: 0.75rem; color: var(--color-text-muted); display: block;">Clinic Consultation Hours:</span>
+            <strong id="modalDocHours" style="font-size: 0.85rem; color: var(--color-primary-navy);"></strong>
+          </div>
+          <a href="appointment.html" class="btn btn-primary" id="modalDocBookBtn">
+            <i class="bi bi-calendar-check"></i> Book Consultation
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
