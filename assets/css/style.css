@@ -1281,6 +1281,7 @@ p:last-child {
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.12);
+  width: fit-content;
 }
 
 .emergency-icon-circle {
@@ -2491,6 +2492,236 @@ textarea.form-control {
 .delay-300 { transition-delay: 0.3s; }
 .delay-400 { transition-delay: 0.4s; }
 
+
+/* --- 19. PATIENT TESTIMONIALS SECTION --- */
+.testimonials-section {
+  background: var(--color-bg-pure);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.testimonial-card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  transition: transform var(--transition-base), 
+              border-color var(--transition-base), 
+              box-shadow var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-teal-accent);
+  box-shadow: var(--shadow-lg), 0 10px 20px -10px rgba(13, 148, 136, 0.1);
+}
+
+.testimonial-rating {
+  color: #FBBF24; /* Golden yellow */
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-body);
+  margin-bottom: 2rem;
+  font-style: italic;
+  position: relative;
+}
+
+.testimonial-patient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  border-top: 1px solid var(--color-bg-subtle);
+  padding-top: 1.25rem;
+  margin-top: auto;
+}
+
+.patient-img img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-teal-accent);
+}
+
+.patient-info {
+  flex-grow: 1;
+}
+
+.patient-name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text-title);
+  margin: 0;
+}
+
+.patient-dept {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.patient-verified {
+  color: var(--color-teal-accent);
+  font-size: 1rem;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+/* --- 20. LATEST NEWS & INSIGHTS SECTION --- */
+.news-section {
+  background: var(--color-bg-surface);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.news-card {
+  background: var(--color-bg-pure);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-base), 
+              border-color var(--transition-base), 
+              box-shadow var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-teal-accent);
+  box-shadow: var(--shadow-lg), 0 10px 20px -10px rgba(13, 148, 136, 0.1);
+}
+
+.news-img-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.news-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.news-card:hover .news-img-wrapper img {
+  transform: scale(1.08);
+}
+
+.news-category {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary-navy);
+  color: var(--color-text-white);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  backdrop-filter: blur(4px);
+  background: rgba(10, 30, 63, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.news-content {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.news-meta {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.news-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.news-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0.85rem;
+}
+
+.news-card-title a {
+  color: var(--color-text-title);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.news-card-title a:hover {
+  color: var(--color-teal-accent);
+}
+
+.news-excerpt {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-body);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.news-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid var(--color-bg-subtle);
+  padding-top: 1rem;
+  margin-top: auto;
+}
+
+.author-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-title);
+}
+
 /* --- 20. RESPONSIVE BREAKPOINTS (STRICT REQUIREMENT) --- */
 
 /* 1. Large Desktop (1440px and above) */
@@ -2534,6 +2765,11 @@ textarea.form-control {
   .hero-grid {
     grid-template-columns: 1fr 0.9fr;
     gap: 2.5rem;
+  }
+
+  .hero-main-img {
+    height: auto;
+    max-height: 520px;
   }
 
   .stats-grid {
@@ -2687,6 +2923,7 @@ textarea.form-control {
 /* 5. Mobile Landscape / Small Tablets (768px and down) */
 @media (max-width: 768px) {
   .stats-grid {
+    display: grid;
     grid-template-columns: 1fr;
   }
   .stats-grid .stat-card:last-child {
@@ -2700,8 +2937,14 @@ textarea.form-control {
   .contact-info-grid,
   .values-grid,
   .accreditations-grid,
-  .tech-showcase-grid {
+  .tech-showcase-grid,
+  .testimonials-grid,
+  .news-grid {
     grid-template-columns: 1fr;
+  }
+
+  .news-category {
+    white-space: nowrap;
   }
 
   .values-grid .value-card:last-child:nth-child(odd),
@@ -2774,7 +3017,10 @@ textarea.form-control {
   .accreditations-grid,
   .tech-showcase-grid,
   .contact-info-grid,
-  .footer-grid {
+  .footer-grid,
+  .stats-grid,
+  .testimonials-grid,
+  .news-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
@@ -2783,7 +3029,10 @@ textarea.form-control {
   .values-grid .value-card:last-child:nth-child(odd),
   .accreditations-grid .accreditation-card:last-child:nth-child(odd),
   .tech-showcase-grid .tech-card:last-child:nth-child(odd),
-  .contact-info-grid .contact-card:last-child:nth-child(odd) {
+  .contact-info-grid .contact-card:last-child:nth-child(odd),
+  .stats-grid .stat-card:last-child:nth-child(odd),
+  .testimonials-grid .testimonial-card:last-child:nth-child(odd),
+  .news-grid .news-card:last-child:nth-child(odd) {
     grid-column: 1 / span 2;
     margin: 0 auto;
     width: 100%;
